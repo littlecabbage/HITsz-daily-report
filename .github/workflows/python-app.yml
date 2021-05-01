@@ -29,8 +29,8 @@ jobs:
     - name: Run report
       shell: bash
       env:
-        USERNAME: ${{ 20S151144 }}
-        PASSWORD: ${{ zzh645985790 }}
-        API_KEY: ${{ SCU171979T20573129bc62e618e46acd122212be52608d74607f3c5 }}
+        USERNAME: ${{ secrets.username }}
+        PASSWORD: ${{ ecrets.password }}
+        API_KEY: ${{ secrets.api_key }}
       run: |
         python report.py "$USERNAME" "$PASSWORD" -k "$API_KEY"
